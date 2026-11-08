@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>No Smoking Together · 글 남기기</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="guestbook.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>방명록</h1>
+      <nav>
+        <a href="index.html">홈</a>
+        <a href="about.html">서비스 소개&금연 팁</a>
+        <a href="guestbook.html">글 남기기</a>
+      </nav>
+    </header>
+    <main>
+      <h3>작성 순서</h3>
+      <ol>
+        <li>닉네임을 입력한다.</li>
+        <li>메시지를 적고 남기기 버튼을 누른다.</li>
+      </ol>
+      <form id="guestbook-form">
+        <p>
+          <label for="name">닉네임</label>
+          <input id="name" type="text" placeholder="예: 금연X일차">
+        </p>
+        <p>
+          <label for="message">메시지</label>
+          <textarea id="message" rows="4" placeholder="자유롭게 한 줄을 남겨주세요."></textarea>
+        </p>
+        <button type="submit">남기기</button>
+      </form>
+      <div id="notice"></div>
+      <h3>남겨진 글</h3>
+      <ul class="card" id="list"></ul>
+    </main>
+    <footer>
+      <p>금연 커뮤니티</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>No Smoking Together · 금연 커뮤니티</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>모두의 금연 출석체크</h1>
+      <nav>
+        <a href="index.html">홈</a>
+        <a href="about.html">서비스 소개&금연 팁</a>
+        <a href="guestbook.html">글 남기기</a>
+      </nav>
+    </header>
+    <main>
+      <div class="card" id="greeting">오늘도 담배 없이 상쾌하게!</div>
+      <div>
+        <button id="attendance-button" type="button">오늘 출석체크 하기</button>
+        <button id="dark-button" type="button">다크 모드</button>
+      </div>
+      <div class="card" id="count">오늘 출석 확인 중...</div>
+      <h2>소개</h2>
+      <img src="images/no smoking.jpg" alt="금연 메인 이미지" width="160">
+      <p class="card">혼자 하면 힘들지만 함께하면 해낼 수 있습니다!</p>
+      <p class="card">매일 금연 출석 도장을 찍고 회원들과 함께 기록을 이어가는 소통 공간입니다.</p>
+      <h2>금연 출석체크 규칙</h2>
+      <ul class="card">
+        <li><strong>1일 차 시작:</strong> 출석체크 버튼을 최초로 누르면 금연 1일 차 도전이 시작됩니다.</li>
+        <li><strong>연속 출석:</strong> 매일 방문해 버튼을 누르면 금연 성공 일수가 1일씩 누적됩니다.</li>
+        <li><strong>누락 시 초기화:</strong> 하루라도 출석을 놓치면 도전 실패로 간주되어 다시 1일 차로 리셋됩니다.</li>
+      </ul>
+    </main>
+    <footer>
+      <p>금연 커뮤니티</p>
+    </footer>
+  </body>
+</html>

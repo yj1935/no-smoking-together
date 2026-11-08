@@ -1,0 +1,146 @@
+body {
+  background-color: #eef9f5; /* 상쾌하고 연한 민트빛 배경 */
+  color: #1c352d;
+  font-family: system-ui, sans-serif;
+  font-size: 16px;
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 16px;
+  line-height: 1.6;
+}
+
+h1 {
+  color: #0f5132; /* 진한 딥 포레스트 그린 */
+  font-size: 28px;
+}
+
+h2 {
+  color: #198754; /* 활기찬 건강 그린 */
+}
+
+nav {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #198754;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 16px;
+  margin: 12px 0;
+  border: 1px solid #c3e6cb; /* 부드러운 그린 테두리 */
+  border-radius: 8px;
+}
+
+button {
+  background-color: #198754;
+  color: #ffffff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 8px;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #146c43;
+}
+
+input,
+textarea {
+  width: 280px;
+  max-width: 100%;
+  padding: 8px;
+  border: 1px solid #c3e6cb;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+footer {
+  color: #5a786e;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 24px;
+}
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+  }
+}
+
+/* -----------------------------------
+ * 다크 모드 (어두운 야간 금연 테마)
+ * ----------------------------------- */
+body.dark {
+  background-color: #101e19; /* 야간 딥 숲속 배경 */
+  color: #e0ece7;
+}
+
+body.dark .card {
+  background-color: #1a2c25;
+  color: #e0ece7;
+  border-color: #2b473c;
+}
+
+body.dark h1 {
+  color: #5cf2bd; /* 밝게 빛나는 차분한 민트 */
+}
+
+body.dark h2,
+body.dark nav a {
+  color: #20c997;
+}
+
+body.dark button {
+  background-color: #20c997;
+  color: #0d1914;
+}
+
+body.dark button:hover {
+  background-color: #17a2b8;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+  background-color: #ffffff;
+}
+
+th, td {
+  border: 1px solid #c3e6cb;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #d1e7dd;
+  color: #0f5132;
+}
+
+body.dark table {
+  background-color: #1a2c25;
+}
+
+body.dark th, body.dark td {
+  border-color: #2b473c;
+}
+
+body.dark th {
+  background-color: #243e33;
+  color: #20c997;
+}
